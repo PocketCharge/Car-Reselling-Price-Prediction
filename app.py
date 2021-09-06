@@ -16,7 +16,6 @@ def home():
 def predict():
     #For rendering results on HTML GUI
     features_list = [x for x in request.form.values()]
-    print (features_list)
     le_name = pkl.load(open('name_encoder.pkl','rb'))
     le_location = pkl.load(open('location_encoder.pkl','rb'))
     le_fuel_type = pkl.load(open('fuel_type_encoder.pkl','rb'))
