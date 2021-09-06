@@ -11,13 +11,12 @@
   
 </head>
 
-<body style="background: #000;">
+<body style="background: rgba(0, 255, 213, 0.938);">
 <div class="login">
     <h1>Predict Car Reselling Price</h1>
      <h3> Enter the following values to predict the Car Reselling Price</h3>
 
     <form action="{{ url_for('predict')}}"method="post">
-        <input type="text" name="name" placeholder="Company Name" required="required" />
         <label for="name">Choose a Company Name:</label>
 
         <select name="name" id="name">
@@ -52,7 +51,6 @@
           <option value="Lamborghini">Lamborghini</option>
         </select>
 
-        <input type="text" name="location" placeholder="Location Of Selling" required="required" />
         <label for="location">Choose a Location:</label>
 
         <select name="location" id="location">
@@ -71,7 +69,7 @@
 
         <input type="text" name="year" placeholder="Year Of Purchase" required="required" />
         <input type="text" name="kilometers_driven" placeholder="Kilometers Driven" required="required" />
-        <input type="text" name="fuel_type" placeholder="Type of Fuel Consumed by Vehicle" required="required" />
+
         <label for="fuel_type">Choose a Fuel Type:</label>
 
         <select name="fuel_type" id="fuel_type">
@@ -81,7 +79,6 @@
           <option value="LPG">LPG</option>
         </select>
 
-        <input type="text" name="transmission" placeholder="Transmission Type" required="required" />
         <label for="transmission">Choose a Transmission Type:</label>
 
         <select name="transmission" id="transmission">
@@ -89,7 +86,6 @@
           <option value="Automatic">Automatic</option>
         </select>
 
-        <input type="text" name="owner_type" placeholder="Ownership Type" required="required" />
         <label for="owner_type">Choose an Ownership Type:</label>
 
         <select name="owner_type" id="owner_type">
