@@ -17,7 +17,7 @@ body {
 	width: 100%;
 	/* background-image: url("/img/car1.jpg"); */
 	/* background-image: url('{% static 'car1.jpg' %}'); */
-	background: url(../main/img/car1.jpg); 
+	/* background: url(../main/img/car1.jpg);  */
 	height:100%;
 	font-family: 'Helvetica';
 	background: #000;
